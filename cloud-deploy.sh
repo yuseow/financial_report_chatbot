@@ -10,3 +10,5 @@ sudo usermod -aG docker $USER
 git clone https://github.com/yuseow/financial_report_chatbot
 cd financial_report_chatbot
 docker compose --env-file .env up -d
+
+# docker compose down && docker compose --env-file .env up -d && docker compose logs -f

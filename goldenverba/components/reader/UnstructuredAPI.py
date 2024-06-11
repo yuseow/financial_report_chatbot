@@ -47,7 +47,7 @@ class UnstructuredReader(Reader):
         }
 
         data = {
-            "strategy": "auto",
+            "strategy": "hi_res",
             "hi_res_model_name": "yolox"
         }
 
