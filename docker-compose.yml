@@ -108,6 +108,13 @@ services:
     restart: always
     environment:
       - UNSTRUCTURED_API_KEY=$UNSTRUCTURED_API_KEY
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
 
 
 volumes:
