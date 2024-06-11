@@ -89,6 +89,14 @@ services:
       dockerfile: Dockerfile-ollama
     ports:
       - 11434:11434
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
 
   unstructured:
     image: downloads.unstructured.io/unstructured-io/unstructured-api:latest
