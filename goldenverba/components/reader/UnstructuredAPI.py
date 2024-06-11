@@ -48,6 +48,7 @@ class UnstructuredReader(Reader):
 
         data = {
             "strategy": "auto",
+            "hi_res_model_name": "yolox"
         }
 
         for file in fileData:
