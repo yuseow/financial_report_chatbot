@@ -47,8 +47,8 @@ class UnstructuredReader(Reader):
         }
 
         data = {
-            "strategy": "hi_res",
-            "hi_res_model_name": "yolox"
+            "strategy": os.environ.get("UNSTRUCTURED_STRATEGY", ""),
+            "hi_res_model_name": os.environ.get("UNSTRUCTURED_MODEL", ""),
         }
 
         for file in fileData:
